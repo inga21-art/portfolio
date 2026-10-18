@@ -225,3 +225,36 @@ h1,h2,h3{font-family:var(--display);margin:0;line-height:1.05;letter-spacing:-.0
 @media (max-width:860px){
   .nav-links{background:var(--navy-2);box-shadow:0 12px 30px rgba(0,0,0,.4)}
 }
+
+/* ---------- Final sizing: natural, calmer scale (tune the numbers here) ---------- */
+html{font-size:90%}
+.nav{padding-top:10px;padding-bottom:10px}
+.hero{min-height:0;max-width:1040px;gap:clamp(16px,3vw,40px);padding-top:clamp(16px,2.5vw,32px);padding-bottom:clamp(32px,4vw,56px)}
+.hero h1{font-weight:700;font-size:clamp(3.2rem,7.2vw,5.6rem);line-height:.92;letter-spacing:-.035em}
+.hero h1 .line:nth-child(2){margin-left:.3em}
+.hero-tag{font-size:clamp(1.25rem,2vw,1.6rem);margin:22px 0 10px}
+.hero-sub{font-size:1.1rem;line-height:1.55;max-width:36ch}
+.hero-status{margin-bottom:20px;padding:6px 14px}
+.btn{padding:11px 20px;font-size:.95rem}
+.hero-art{max-width:360px}
+.sticker{font-size:.9rem;padding:7px 16px}
+.block{max-width:1000px;padding-top:clamp(40px,5vw,68px);padding-bottom:clamp(40px,5vw,68px)}
+.block h2{font-weight:700;font-size:clamp(1.9rem,3.8vw,2.7rem);margin-bottom:22px}
+.project h3{font-size:clamp(1.7rem,3vw,2.2rem)}
+.project{padding:clamp(20px,3vw,34px) 0}
+.timeline>li{grid-template-columns:132px 1fr}
+.timeline::before{left:65px}
+.logo-tile{width:132px;height:92px}
+.tl-body h3{font-size:1.3rem}
+.stats{max-width:1000px}
+.stats b{font-size:clamp(2.2rem,4vw,3rem)}
+.quotes h3{font-size:clamp(1.4rem,2.5vw,1.9rem)}
+@media (max-width:860px){
+  .timeline>li{grid-template-columns:82px 1fr}
+  .timeline::before{left:41px}
+  .logo-tile{width:82px;height:72px}
+  .hero-art{max-width:320px}
+}
+.stats ul{grid-template-columns:repeat(4,1fr);gap:20px}
+.stats span{font-size:.95rem;max-width:20ch}
+@media (max-width:860px){.stats ul{grid-template-columns:repeat(2,1fr)}}
